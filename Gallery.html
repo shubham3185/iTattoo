@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            background-color: rgb(22, 19, 19);
+    
+        }
+        .span{
+            /* background-color: rgb(177, 49, 49); */
+            color: white;
+            margin-right: 30px;
+            
+        }
+        .hom ul{
+            color: white;
+            background-color: rgb(15, 2, 2);
+
+        }
+
+        .hom li .active:hover{
+            background-color:rgb(179, 39, 39);
+            /* width: 80px; */
+            color: rgb(255, 252, 252);
+            font-size: larger;
+        }
+
+        .container1{
+
+        }
+        .container1 .best{
+            width: 80%;
+            margin: auto;
+        }
+        .container1 .best .p1{
+            font-size: 3rem;
+            font-weight: 300;
+        }
+        .container1 .best .btn{
+            border: 2px solid black;
+            width: 250px;
+            font-size: larger;
+            font-weight: 700;
+            border-radius: 10px;
+        }
+        .best .btn:hover{
+            background-color: aquamarine;
+
+        }
+        .container2 .btn2:hover{
+            background-color: white;
+        }
+        .container2 a{
+            text-decoration: none;
+        }
+        .container2{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgba(15, 197, 173, 0.959);
+        }
+        .btn3:hover{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-lg w-100">
+        <div class="container bg-danger">
+          <a class="navbar-brand text-white" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToHe6rDbwY3ekrrfFIbXmVSOWICQVgM89rSw&usqp=CAU" alt="" width="100px" height="100px" style="border-radius: 100%;"></a>
+          <span class="span fs-1 mb-2">iTattoo</span>
+          <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse justify-content-end hom" id="navbarSupportedContent">
+            
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white active mx-3" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white mx-3" aria-current="page" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white mx-3" aria-current="page" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white mx-3" aria-current="page" href="#">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white mx-4" aria-current="page" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white mx-4" aria-current="page" href="">Photo Gallery</a>
+              </li>
+                  </div>
+                </div>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+
+      <div class="container1 text-center justify-content-center"><br>
+        <div class="best">
+            <p class="p1">Choosing the <b>best category</b> for your <br> tattoo has never been this easy</p>
+            <p>Most of the time, when clients plan on getting inked, they have a fair idea of what they really want on their body. However, there have been instances where a client decides what they want only to realise how many other options they have at their disposal. At Aliens Tattoo, we have mastered every tattoo category ranging from religious tattoos to animal tattoos. Be it a small tattoo or one that covers your entire sleeve, we provide tattoo ideas for everything, leaving no stone unturned. Here, we have equipped you with in-depth information on each category, when it is most appropriate and the significance behind them. We can help you understand what would be the perfect tattoo exclusively curated based on your ideas, preferences and requirements.</p><br>
+            <button class="btn">Talk to us now</button>
+        </div><br><br>
+      </div>
+
+      <!--start card gallery categories of tattoos -->
+    <div class="container2 justify-content-center text-center bg-light p-2 py-5">
+        <!-- <div class="row justify-content-center"> -->
+           <div class="card mx-1 my-2 text-white bg-dark" style="width: 18rem;">
+              <img src="https://www.dmarge.com/wp-content/uploads/2023/06/Pet-Tattoo-Featured-Image-1200x857.jpg" class="card-img-top image" onclick="changeimage()" alt="..." height="350px">
+              <div class="card-body">
+                <h5 class="card-title">Pet Tattoo</h5>
+                
+              </div>
+            </div>
+            <div class="card mx-1 my-2 " style="width: 18rem;">
+              <img src="https://www.tattoosnewdelhi.com/images/nephew-tattoo-on-arm.jpg" class="card-img-top image" alt="..." height="350px" onclick="changeimage()">
+              <div class="card-body">
+                <h5 class="card-title">Potrait Tattoo</h5>
+                
+              </div>
+            </div>
+            <div class="card mx-1 my-2 text-white bg-dark" style="width: 18rem;">
+              <img src="https://i.pinimg.com/736x/86/6a/2a/866a2a25738d058fa6737af5c4f69728.jpg" class="card-img-top image" onclick="changeimage()" alt="..." height="350px">
+              <div class="card-body">
+                <h5 class="card-title">Travel Tattoos</h5>
+               
+              </div>
+            </div>
+
+            <div class="card mx-1 my-2 bg-info" style="width: 18rem;height: 416px;">
+                <p class="cp fs-2 my-5"><b>Confused</b> with <br>
+                    so many options <br>
+                    to choose from?</p>
+                <div class="card-body">
+                 <button class="btn btn2" style="border: 2px solid black; width: 250px; border-radius: 10px; padding: 7px; font-weight: 700; font-size: larger;"><a class="text-dark " href="">Let us help</a></button>
+                </div>
+              </div>
+  
+            <div class="card mx-1 my-2" style="width: 18rem;">
+              <img src="https://www.simplyinked.in/cdn/shop/files/mu-pulse-1.jpg?v=1695394370" class="card-img-top image" onclick="changeimage()" alt="" height="350px">
+              <div class="card-body">
+                <h5 class="card-title">Small Tattoos</h5>
+                
+              </div>
+            </div>
+            
+            <div class="card mx-1 my-2 text-white bg-dark" style="width: 18rem;">
+              <img src="https://5.imimg.com/data5/ANDROID/Default/2022/11/DP/DE/UF/58276569/product-jpeg-500x500.jpg" class="card-img-top image" onclick="changeimage()" alt="" height="350px">
+              <div class="card-body">
+                <h5 class="card-title">Religious Tattoos</h5>
+                
+              </div>
+            </div>
+  
+            <div class="card mx-1 my-2" style="width: 18rem;">
+              <img src="https://www.ourmindfullife.com/wp-content/uploads/2022/08/Stunning-watercolor-waterlily-tattoo-by-@peria_tattoo.jpg" class="card-img-top image" onclick="changeimage()" alt="" height="350px">
+              <div class="card-body">
+                <h5 class="card-title">Watercolour Tattoos</h5>
+                
+              </div>
+            </div>
+  
+            <div class="card mx-1 my-2 text-white bg-dark" style="width: 18rem;">
+              <img src="https://www.cloakanddaggerlondon.co.uk/images/geometric-tattoo-mandala6.jpg" class="card-img-top image" onclick="changeimage()" alt="" height="350px">
+              <div class="card-body">
+                <h5 class="card-title">Geometric Tattoos</h5>
+                
+              </div>
+            </div>
+          
+        <!-- </div> -->
+      </div>
+
+
+      <div class="container1 text-center justify-content-center"><br>
+        <div class="best">
+            <p class="p1">This is where your <b>dream tattoo </b> comes to life</p>
+            <p>We can help you understand what would be the perfect tattoo by exclusively curating your ideas, preferences and requirements. Remember, narrowing down on the ideal tattoo design for your skin is not something we take lightly. Hence our research for the best tattoo ideas never stops. We are regularly developing and upgrading the categories with jaw-dropping designs that are unique in every sense. Our experts take immense pride in their work, and when they don’t have a tattoo machine in their hand, they will be filling stencils after stencils with the latest designs straight out of their heads. So, before narrowing down on your final tattoo idea, we highly recommend you to go through these categories.</p><br>
+            <button class="btn">Talk to us now</button>
+        </div><br><br>
+      </div>
+
+
+      <!--start card gallery categories of tattoos -->
+    <div class="container2 justify-content-center text-center bg-light p-2 py-5">
+        <!-- <div class="row justify-content-center"> -->
+
+            <div class="card mx-1 my-2 bg-warning" style="width: 18rem;height: 416px;">
+                <p class="cp fs-2 my-5">Looking for 
+                    something <br>
+                    <b>out of the box?</b><br>Well, we have a lot to talk about!</p>
+                <div class="card-body">
+                 <button class="btn btn2" style="border: 2px solid black; width: 250px; border-radius: 10px; padding: 7px; font-weight: 700; font-size: larger;"><a class="text-dark " href="">Let's get in touch</a></button>
+                </div>
+            </div>
+  
+            <div class="card mx-1 my-2 bg-dark text-white" style="width: 18rem;">
+              <img src="https://cdn.shopify.com/s/files/1/1184/2886/files/matching_tattoo_1_2048x2048.jpg?v=1514675569" class="card-img-top image" onclick="changeimage()" alt="" height="350px">
+              <div class="card-body">
+                <h5 class="card-title">Couple Tattoos</h5>
+               
+              </div>
+            </div>
+
+            <div class="card mx-1 my-2 text-white bg-dark" style="width: 18rem;">
+              <img src="https://www.tattoosnewdelhi.com/images/nephew-tattoo-on-arm.jpg" class="card-img-top image" alt="..." height="350px" onclick="changeimage()">
+              <div class="card-body">
+                <h5 class="card-title">Potrait Tattoo</h5>
+                
+              </div>
+            </div>
+            <div class="card mx-1 my-2 text-white bg-dark" style="width: 18rem;">
+              <img src="https://i.pinimg.com/736x/86/6a/2a/866a2a25738d058fa6737af5c4f69728.jpg" class="card-img-top image" onclick="changeimage()" alt="..." height="350px">
+              <div class="card-body">
+                <h5 class="card-title">Travel Tattoos</h5>
+               
+              </div>
+            </div>
+  
+            <div class="card mx-1 my-2 text-white bg-dark" style="width: 18rem;">
+              <img src="https://www.simplyinked.in/cdn/shop/files/mu-pulse-1.jpg?v=1695394370" class="card-img-top image" onclick="changeimage()" alt="" height="350px">
+              <div class="card-body">
+                <h5 class="card-title">Small Tattoos</h5>
+                
+              </div>
+            </div>
+            
+            <div class="card mx-1 my-2 text-white bg-dark" style="width: 18rem;">
+              <img src="https://5.imimg.com/data5/ANDROID/Default/2022/11/DP/DE/UF/58276569/product-jpeg-500x500.jpg" class="card-img-top image" onclick="changeimage()" alt="" height="350px">
+              <div class="card-body">
+                <h5 class="card-title">Religious Tattoos</h5>
+                
+              </div>
+            </div>
+  
+            <div class="card mx-1 my-2 bg-dark text-white" style="width: 18rem;">
+              <img src="https://www.ourmindfullife.com/wp-content/uploads/2022/08/Stunning-watercolor-waterlily-tattoo-by-@peria_tattoo.jpg" class="card-img-top image" onclick="changeimage()" alt="" height="350px">
+              <div class="card-body">
+                <h5 class="card-title">Watercolour Tattoos</h5>
+                
+              </div>
+            </div>
+  
+            <div class="card mx-1 my-2 text-white bg-dark" style="width: 18rem;">
+              <img src="https://www.cloakanddaggerlondon.co.uk/images/geometric-tattoo-mandala6.jpg" class="card-img-top image" onclick="changeimage()" alt="" height="350px">
+              <div class="card-body">
+                <h5 class="card-title">Geometric Tattoos</h5>
+                
+              </div>
+            </div>          
+        <!-- </div> -->
+      </div>
+
+
+
+      <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-6 text-end fs-1 my-3">
+                <p>There is a unique <br> tattoo for <br> everyone! Hence <br> we deliver an <br><b> all-inclusive </b><br> range of <br> categories.</p>
+            </div>
+            <div class="col-lg-6 my-3">
+                <p class="" style="font-family: 'Courier New', Courier, monospace;">Everyone deserves a tattoo that best resembles their personal ideologies or something they hold truly close to their hearts. While one client is in search of ideas for pet tattoos, another could be on the lookout for religious tattoo designs. We dish out tattoo ideas of all shapes and sizes, keeping in mind our client’s expectations. Our in-house experts have been fully equipped with the knowledge of a wide array of categories. For example, if a client is in search of a watercolour tattoo, we are ready with a spectacular range of options from that category. The same goes for other designs like Lord Shiva Tattoos, Religious Tattoos, Small/Cute Tattoos, Animal Tattoos, 3D/Realistic Tattoos, Geometric Tattoos, Travel Themed Tattoos, Couple Tattoos, Calligraphy Tattoos, Full Back/Sleeve Tattoos, and so on.</p>
+
+                <button class="btn btn3" style="border: 1px solid black; border-radius: 7px; font-weight: 600; font-size: larger; width: 280px; padding: 8px;">Free Consultation</button>
+            </div>
+            
+        </div><br><br><br>
+      </div>
+
+      <!--start card gallery categories of tattoos -->
+    <div class="container2 justify-content-center text-center bg-light p-2 py-5">
+        <!-- <div class="row justify-content-center"> -->
+
+            
+            <div class="card mx-1 my-2" style="width: 18rem;">
+                <img src="https://www.tattoosnewdelhi.com/images/cute-pink-color-kitten-tattoo.jpg" class="card-img-top image" onclick="changeimage()" alt="" height="350px">
+                <div class="card-body">
+                    <h5 class="card-title">Animal Tattoos</h5>
+                    
+                </div>
+            </div>
+            
+            <div class="card mx-1 my-2 bg-info" style="width: 18rem;height: 416px;">
+                <p class="cp fs-2 my-5">Some ideas
+                    <br>in life <b>can't be <br>
+                    put into a category </b> and we simply agree</p>
+                <div class="card-body">
+                 <button class="btn btn2" style="border: 2px solid black; width: 250px; border-radius: 10px; padding: 7px; font-weight: 700; font-size: larger;"><a class="text-dark " href="">Let's talk</a></button>
+                </div>
+            </div>
+
+            <div class="card mx-1 my-2" style="width: 18rem;">
+              <img src="https://100tattoos.com/wp-content/uploads/2023/06/buddha-tattoo1.jpg" class="card-img-top image" onclick="changeimage()" alt="" height="350px">
+              <div class="card-body">
+                <h5 class="card-title">Buddha Tattoos</h5>
+                
+              </div>
+            </div>
+            
+            <div class="card mx-1 my-2" style="width: 18rem;">
+              <img src="https://kickassthings.com/wp-content/uploads/2016/04/double-exposure-tattoo-Andrey-Stepanov-4s.jpg" class="card-img-top image" onclick="changeimage()" alt="" height="350px">
+              <div class="card-body">
+                <h5 class="card-title">Double Exposure Tattoos</h5>
+                
+              </div>
+            </div>
+  
+            
+                
+              </div>
+            </div><br><br><br>          
+        <!-- </div> -->
+      </div>
+      
+
+  <!-- footer start -->
+    <footer class="bd-footer" style="background-color: rgb(197, 197, 228); width: 100%; height: 100%;">
+        <div class="container w-100 py-5">
+          <div class="row">
+              <div class="col-sm-3 mb-3">
+                  <h5>ARTIST PORTFOLIO</h5>
+                  <ul class="list-unstyled">
+                      <li class="mb-2"><a href="" class="text-dark ">Sunny Bhansauli</a></li>
+                      <li class="mb-2"><a href="" class="text-dark ">Dipti Chaurasiya </a></li>
+                      <li class="mb-2"><a href="" class="text-dark ">Vishal Maurya</a></li>
+                  </ul>
+                  <!-- <h3>Gallery</h3>
+                  <img src="sooz.jpg" alt="" width="120px" height="110px" style="padding: 2px;">
+                  <img src="sooz.jpg" alt="" width="120px" height="110px" style="padding: 2px 2px;">
+                  <img src="sooz.jpg" alt="" width="120px" height="110px" style="padding: 2px;">
+                  <img src="sooz.jpg" alt="" width="120px" height="110px" style="padding: 2px;">
+                  <img src="sooz.jpg" alt="" width="120px" height="110px" style="padding: 2px;">
+                  <img src="sooz.jpg" alt="" width="120px" height="110px" style="padding: 2px;"> -->
+              </div>
+            <div class="col-sm-3 mb-3">
+              <h5>TATTOO CATEGORIES</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="" class="text-dark">Realistic Tattoos</a></li>
+                <li class="mb-2"><a href="" class="text-dark ">Small / Cute Tattoos</a></li>
+                <li class="mb-2"><a href="" class="text-dark ">Water Colour Tattoos</a></li>
+                <li class="mb-2"><a href="" class="text-dark ">Potrait Tattoos</a></li>
+                <li class="mb-2"><a href="" class="text-dark ">Pet Tattoos</a></li>
+                <li class="mb-2"><a href="" class="text-dark ">Religious Tattoos</a></li>
+                <li class="mb-2"><a href="" class="text-dark ">Cover Up Tattoos</a></li>
+                <li class="mb-2"><a href="" class="text-dark ">Couple Tattoos</a></li>
+                <li class="mb-2"><a href="" class="text-dark ">Geometric Tattoos</a></li>
+                <li class="mb-2"><a href="" class="text-dark ">Travelers Tattoos</a></li>
+                <li class="mb-2"><a href="" class="text-dark ">Piercing</a></li>
+
+
+              </ul>
+            </div>
+            <div class="col-sm-3 mb-3">
+                <h5>LEARN FROM US</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="" class="text-dark ">Success Stories</a></li>
+                    <li class="mb-2"><a href="" class="text-dark ">Learning </a></li>
+                    <li class="mb-2"><a href="" class="text-dark ">Youtube Learning</a></li>
+                    <li class="mb-2"><a href="" class="text-dark ">Online Tattoo</a></li>
+                </ul>
+                <h5>SOCIAL CONNECT</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="" class="text-dark "><b>Instagram</b></a></li>
+                    <li class="mb-2"><a href="" class="text-dark "><b>Facebook</b></a></li>
+                    <li class="mb-2"><a href="" class="text-dark "><b>Youtube</b></a></li>
+                    <li class="mb-2"><a href="" class="text-dark "><b>Twitter</b></a></li>
+                </ul>
+              
+            </div>
+            <div class="col-sm-3 mb-3">
+              <h5>IMPORTANT LINKS</h5>
+              <ul class="list-unstyled">
+                <li class="mb-2"><a href="" class="text-dark"><b> About Us</b></a></li>
+                <li class="mb-2"><a href="" class="text-dark "><b>Our Culture</b></a></li><br>
+                <li class="mb-2"><a href="" class="text-dark "><b>Tattoo Aftercare</b></a></li>
+                <li class="mb-2"><a href="" class="text-dark "><b>Blog</b></a></li>
+                <li class="mb-2"><a href="" class="text-dark "><b>Product</b></a></li>
+                <li class="mb-2"><a href="" class="text-dark "><b>Privacy Policy</b></a></li>
+                <li class="mb-2"><a href="" class="text-dark "><b>Terms & Conditions</b></a></li>
+              </ul>
+            </div>
+          </div>
+        </div><hr style="color: rgb(30, 255, 255); width: 90%; margin: auto; border: 2px solid rgb(233, 3, 3);">
+
+        <div class="container w-100 mx-auto py-5">
+            <div class="row">
+            <div class="col-sm-4 mb-3">
+                <ul class="list-unstyled">
+                    <h5>Sky Art Private Limited</h5>
+                    <p>Gala No. K2, Near Polytechnic <br> Chauraha Varansi road Jaunpur,<br> UttarPradesh 222003.</p>
+                    <h5>Phone: <span class="" style="font-weight: 400; font-size: large;">+91 8040444740</span></h5><br>
+                    <h5>Email:</h5>
+                    <p>getinked@skytattoos.com</p>
+                </ul>
+            </div>
+            <div class=" col-sm-4 mb-3">
+                <ul class="list-unstyled">
+                    <h5>Open Hours</h5>
+                    <p>Monday  11:00-22:00</p>
+                    <p>Tuesday  11:00-22:00</p><p>Wednesday  11:00-22:00</p><p>Thursday  11:00-22:00</p><p>Friday  11:00-22:00</p><p>Saturday  11:00-22:00</p>
+                </ul>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28750.255186891547!2d82.65992432992282!3d25.74472520723037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39903a2c93994715%3A0xf9a9f10dc97322!2sJaunpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1697685149025!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            </div>
+        </div>
+        <div class="copy w-100 text-center" style=" padding: 20px; color: rgb(253, 252, 252); background-color: rgb(29, 26, 22);">
+            <p>Copyright @2023 All rights reserved|This template is made by SKY</p>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
